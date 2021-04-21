@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link {
+    @apply hover:underline cursor-pointer transition ease-in-out duration-200;
+  }
+  .btn {
+    @apply bg-[#f8f9fa] px-4 py-2 rounded-sm ring-gray-200 hover:ring-1 active:ring-[#4d90fe] hover:shadow-md text-gray-700 text-sm focus:outline-none transition ease-in-out duration-150;
+  }
+}
+
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
