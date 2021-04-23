@@ -7,7 +7,7 @@ import { XIcon, MicrophoneIcon, SearchIcon, ViewGridIcon } from '~/utils/Icons'
 
 export default function Header () {
   const router = useRouter()
-  const searchInputRef = useRef(null)
+  const searchInputRef = useRef(router.query.term)
 
   const search = e => {
     e.preventDefault()
